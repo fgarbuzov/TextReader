@@ -1,0 +1,16 @@
+#include "menu.h"
+
+MainMenu MENU
+{
+  POPUP "File"
+  {
+    MENUITEM "Open", IDM_OPEN
+    MENUITEM SEPARATOR
+    MENUITEM "Exit", IDM_EXIT
+  }
+  POPUP "View"
+  {
+    MENUITEM "Default", IDM_NO_WRAPPING, CHECKED
+    MENUITEM "With line wrapping", IDM_WRAPPING
+  }
+}
